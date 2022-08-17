@@ -18,7 +18,7 @@ public class ConnectionFactory {
             System.out.println("Connection is being created");
 
 
-            ResourceBundle bundle = ResourceBundle.getBundle("Dbconfi.properties");
+            ResourceBundle bundle = ResourceBundle.getBundle("Dbconfig");
 
             String url = bundle.getString("url");
             String user = bundle.getString("username");
