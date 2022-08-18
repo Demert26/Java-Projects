@@ -17,7 +17,7 @@ public class ConnectionFactory {
         if(connection == null){
             System.out.println("Connection is being created");
 
-            ResourceBundle bundle = ResourceBundle.getBundle("Dbconfi.properties");
+            ResourceBundle bundle = ResourceBundle.getBundle("DbConfig.properties");
 
             String url = bundle.getString("url");
             String user = bundle.getString("username");
@@ -29,10 +29,7 @@ public class ConnectionFactory {
                 System.out.println("Something went wrong with the connection");
                 e.printStackTrace();
             }
-
-
 //            connection = DriverManager.getConnection(url, user, password);
-
 
         }
         return connection;
