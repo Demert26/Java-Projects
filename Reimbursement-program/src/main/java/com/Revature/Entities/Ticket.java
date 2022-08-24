@@ -7,18 +7,20 @@ public class Ticket {
 
     private String description;
 
+    private String status;
 
-    public Ticket(int ticketNumber, int amount, String description) {
+
+    public Ticket(int ticketNumber, int amount, String description, String status) {
         this.ticketNumber =ticketNumber;
         this.amount = amount;
         this.description = description;
-
-
+        this.status = status;
     }
 
-    public Ticket(int amount, String description) {
+    public Ticket(int amount, String description, String status) {
         this.amount = amount;
         this.description = description;
+        this.status = status;
     }
 
     public int getTicketNumber() {
@@ -43,5 +45,13 @@ public class Ticket {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
